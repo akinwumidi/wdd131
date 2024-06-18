@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -8,17 +9,15 @@
 
 :root {
     /* Navy blue */
-    /* --primary-color: #1B263B; */
     --primary-color: #1B998B;
     /* Teal*/
     --secondary-color: #1B263B;
-    /* --secondary-color: #1B998B; */
     /* Coral */
     --accent-color: #FF6F61;
     /* lightgray */
     --background-color: #F5F5F5;
     /* darkgray */
-    --tex-color: ##333333;
+    --tex-color: #333333;
 }
 
 html {
@@ -109,7 +108,8 @@ main {
     grid-template-columns: 4fr 2fr;
     gap: 20px;
     justify-content: space-evenly;
-
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .card {
@@ -221,4 +221,26 @@ footer {
 #lastModified {
     color: var(--accent-color);
     margin: 0.55rem;
+}
+
+@media (max-width: 988px) {
+    main {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+}
+
+@media (max-width: 702px) {
+
+    .card-content-about,
+    .card-content-country {
+        flex-flow: column-reverse nowrap;
+        align-items: center;
+    }
+
+    .card-content-about figure {
+        width: 220px;
+        height: 240px;
+        object-fit: contain;
+    }
 }
