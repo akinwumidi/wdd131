@@ -159,6 +159,19 @@ header {
 /* Headers section ends here */
 
 /* Main section starts here */
+main {
+    text-align: center;
+}
+
+.image-containers {
+    display: grid;
+}
+
+.temple-image img {
+    width: 100%;
+    height: 100%;
+}
+
 /* Main section ends here */
 
 /* footer section starts here */
