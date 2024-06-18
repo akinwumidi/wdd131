@@ -7,12 +7,13 @@
     <meta name="author" content="Israel Akinwumi">
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals israel damilola akinwumi - Homepage">
     <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer=""></script>
     <title>WDD 131 - Dynamic Web Fundamentals - Israel Akinwumi</title>
 </head>
 
 <body>
     <header>
-        <h1>WDD 131:Dynamic Web Fundamentals - Israel D. Akinwumi</h1>
+        <h1>WDD 131:Dynamic Web Fundamentals - <span>Israel D. Akinwumi </span></h1>
         <nav>
             <ul>
                 <li><a href="https://www.linkedin.com/in/akinwumidi" target="_blank">LinkedIn</a></li>
@@ -26,23 +27,52 @@
     <main>
         <section class="card">
             <h2 class="subheadings">About Me</h2>
+            <div class="card-content">
+                <div class="card-content-about">
+                    <p>My name is Israel Akinwumi, i currently reside in Akure, Ondo state, Nigeria. I am a self taught
+                        frontend developer proficient in React Js, Javascript and css, I enjoy building visually
+                        apealing and mobile responsive web application, I am open to work and i am currently seeking
+                        a Frontend developer role.
+
+
+                        <a href="https://www.akinwumidi.dev"><button class="btn btn-main">Visit Portfolio</button></a>
+                    </p>
+                    <figure>
+                        <img src="./images/israel-akinwumi-photo.jpg    " alt="Israel Akinwumi potrait" />
+                    </figure>
+                </div>
+                <h3>Akure, Ondo State, Nigeria</h3>
+                <div class="card-content-country">
+                    <figure>
+                        <img src="./images/nigerian-flag.jpeg    " alt="Israel Akinwumi potrait" />
+                    </figure>
+                    <p>Nigeria, is the vibrant heart of Africa, where diverse cultures, stunning landscapes, and rich
+                        history come together in a
+                        tapestry of tradition and modernity. a nation of over 200 million people, where every corner
+                        offers a unique
+                        experience, from bustling markets and historic landmarks to serene natural wonders and
+                        innovative cities.</p>
+                </div>
+            </div>
         </section>
         <section class="card">
             <h2 class="subheadings">Web Dev Resources</h2>
-            <ul>
-                <li><a href="1">Link 1</a></li>
-                <li><a href="1">Link 2</a></li>
-                <li><a href="1">Link 3</a></li>
-                <li><a href="1">Link 3</a></li>
-            </ul>
+            <div class="card-content">
+                <ul>
+                    <li><a href="https://mycolor.space/gradient" target="_blank">CSS Gradient Generator</a></li>
+                    <li><a href="https://undraw.co/search" target="_blank">Undraw custom picture illustrations</a></li>
+                    <li><a href="https://uiball.com/ldrs/" target="_blank">Free animation loaders</a></li>
+                    <li><a href="https://www.shapedivider.app/" target="_blank">Custom shape divider generator</a></li>
+                </ul>
+
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear">🌹Israel Damilola Akinwumi🌹Nigeria</span></p>
+        <p>&copy; <span id="currentyear"></span>🌹Israel Damilola Akinwumi🌹Nigeria</p>
         <p id="lastModified"></p>
     </footer>
 
-    <script src="scripts/getdates.js"></script>
 </body>
 
 </html>
