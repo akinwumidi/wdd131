@@ -1,0 +1,49 @@
+/* Headers section starts here */
+
+.nav-desktop {
+    padding: 0 0.7rem;
+    z-index: 10;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--secondary-color);
+}
+
+.desktop-links {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    min-width: 405px;
+}
+
+.desktop-links a {
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    margin: 1.05rem 0;
+    color: var(--white-color);
+    padding-bottom: 0.2rem;
+}
+
+.desktop-links a::after {
+    transition: all 0.3s ease;
+    content: "";
+    position: absolute;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    padding: 1px;
+    background: transparent;
+}
+
+.desktop-links a:hover::after {
+    width: 100%;
+    background: var(--accent-color);
+}
+
+/* Headers section ends here */
+
+/* Main section starts here */
+/* Main section ends here */
