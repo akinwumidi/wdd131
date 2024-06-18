@@ -147,7 +147,7 @@ header {
     background: var(--accent-color);
 }
 
-.nav-brand {
+.nav-brand h1 {
     font-family: "Montserrat",
         sans-serif;
     font-weight: 700;
@@ -163,8 +163,15 @@ main {
     text-align: center;
 }
 
-.image-containers {
+main h2 {
+    margin: 1.5rem 0 0 0;
+}
+
+.image-container {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem 1rem;
 }
 
 .temple-image img {
@@ -200,6 +207,10 @@ footer {
 
     .hamburger-menu {
         display: flex;
+    }
+
+    .image-container {
+        grid-template-columns: 1fr;
     }
 }
 
