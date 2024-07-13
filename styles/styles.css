@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+          --primary-color: #ec58a2;
+          /* Example color */
+          --text-color: #333333;
+          /* Example color */
+          --text-color-secondary: #ffff;
+          --primary-background: #364ceb;
+          /* Example color */
+}
+
+
+* {
+          padding: 0;
+          margin: 0;
+}
+
+body {
+          box-sizing: border-box;
+          font-family: "Montserrat", sans-serif;
+          font-optical-sizing: auto;
+          font-style: normal;
+
+}
+
+header {
+          padding: 0;
+}
+
+h1 {
+          text-align: center;
+          padding: 10px;
+          background-color: var(--primary-background);
+          color: var(--text-color-secondary);
+}
+
+nav {
+          padding: 5px;
+          background-color: var(--primary-color);
+}
+
+nav ul {
+          display: flex;
+          justify-content: space-around;
+          padding: 8px;
+}
+
+nav ul li {
+          list-style: none;
+
+
+}
+
+nav ul li a {
+          text-decoration: none;
+          padding: 5px;
+          border: none;
+          color: var(--text-color);
+}
+
+nav ul li a:hover {
+          background-color: var(--text-color-secondary);
+          border-radius: 5px;
+          transition: .5s ease-in-out;
+}
+
+main {
+          display: grid;
+          grid-template-columns: 70% 28%;
+          gap: 2%;
+          margin: 20px;
+}
+
+.card {
+          border: 1px solid var(--primary-color);
+          border-radius: 8px;
+          padding: 0;
+}
+.card h3{
+          padding: 10px;
+          background-color: var(--primary-color);
+          text-align: center;
+          border: 1px solid var(--primary-color);
+          border-top-right-radius: 8px;
+          border-top-left-radius: 8px;
+          color: var(--text-color-secondary);
+}
+.card-head{
+          display: flex;
+          padding: 5px;
+          margin: 20px 10px ;
+          justify-content: space-between;
+}
+.card-head img{
+          width: 20%;
+}
+.card-head p{
+          font-size: 22px;
+          width: 75%;
+}
+.line{
+          padding: 5px;
+          text-align: center;
+}
+.line p{
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 5px;
+}
+hr{
+          width: 70%;
+          margin: auto;
+}
+.card-body{
+          margin: auto;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          height: 80%;
+}
+.card-body ul{
+          margin: auto;
+}
+.card-body ul li{
+          margin: 10px 0;
+}
+
+footer{
+          padding: 10px;
+          background-color: var(--primary-background);
+          text-align: center;
+}
+footer p{
+          margin: 5px 0;
+}
+
+
+
