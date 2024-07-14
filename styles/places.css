@@ -3,7 +3,8 @@
   --primary-color: #ec58a2;
   --text-color: #ffff;
   --text-color-secondary: #333333;
-  --primary-background: #364ceb;
+  /* --primary-background: #364ceb; */
+  --primary-background: #1fd655;
 }
   * {
     padding: 0;
@@ -211,7 +212,18 @@ footer {
 
 
 
-
+.weather-head h2{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather-head h2::after {
+            content: "🌫️";
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
 
 
 
