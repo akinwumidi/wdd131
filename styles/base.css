@@ -42,8 +42,21 @@ body {
 .btn-main {
     color: var(--accent-color);
     border-radius: 8px;
-    border-bottom: 1px solid var(--accent-color);
     cursor: pointer;
+    position: relative; 
+        display: block;
+        margin: 9px 0 0 0;
+        padding: 0;
+        font-size: 1rem;
+    }
+    .btn-main a{
+        color: var(--accent-color);
+
+    }
+.btn-main::after{
+content: "→";
+position: absolute;
+margin-left: 10px;
 }
 
 header {
@@ -245,6 +258,7 @@ footer {
         display: flex;
         flex-flow: column nowrap;
     }
+   
 }
 
 @media (max-width: 702px) {
