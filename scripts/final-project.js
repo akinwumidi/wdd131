@@ -14,3 +14,18 @@ function toggleClassName() {
 hamburgerdiv.addEventListener("click", toggleClassName)
 backdropdiv.addEventListener("click", toggleClassName)
 // Animated hamburger menu ends here
+
+// Window onscroll implementation starts here
+
+window.addEventListener("scroll", () => {
+    let nav = document.querySelector(".header-nav");
+    let scrollValue = document.documentElement.scrollTop;
+    if (scrollValue > 1) {
+        nav.classList.add("header-nav-sticky")
+    }
+    else {
+        nav.classList.remove("header-nav-sticky")
+    }
+})
+
+// Window onscroll implementation ends here

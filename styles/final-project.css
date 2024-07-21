@@ -234,6 +234,9 @@ a {
   bottom: 0;
   left: 0;
 }
+.showbackdrop {
+    display: block;
+}
 .header-banner {
   min-height: 28.75rem;
   padding: 3.12rem 0;
