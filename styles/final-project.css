@@ -239,7 +239,7 @@ a {
   padding: 3.12rem 0;
   position: relative;
   background-attachment: fixed;
-  background: var(--green-gradient), url("./resources/img/header.jpg");
+  background: var(--green-gradient), url("./../images/header.jpg");
   background-size: cover;
   background-position: center;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
@@ -263,6 +263,85 @@ a {
   width: 50%;
 }
 
+/* Animated Hamburger menu starts here */
+
+.hamburger {
+    width: 3.43rem;
+    height: 3.43rem;
+    background: var(--support-color);
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: var(--box-shadow);
+    z-index: 6;
+
+}
+
+.hamburger:hover .bars::before,
+.hamburger:hover .bars::after {
+    transition: transform 0.3s ease;
+}
+
+.hamburger:hover .bars::before {
+    transform: translateY(-0.62rem);
+}
+
+.hamburger:hover .bars::after {
+    transform: translateY(0.62rem);
+}
+
+.bars {
+    background: #fff;
+    height: 0.18rem;
+    width: 60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.4s ease;
+
+}
+
+.bars::before {
+    content: '';
+    width: 80%;
+    height: 0.18rem;
+    background: #fff;
+    position: absolute;
+    transform: translateY(-0.5rem);
+
+}
+
+.bars::after {
+    content: '';
+    width: 80%;
+    height: 0.18rem;
+    background: #fff;
+    position: absolute;
+    transform: translateY(0.5rem);
+}
+
+.crossburger {
+    background: black;
+}
+
+.crossburger .bars {
+    background: transparent;
+    transform: rotate(180deg);
+}
+
+.crossburger .bars::before {
+    transform: translateY(0px) rotate(45deg) !important;
+}
+
+.crossburger .bars::after {
+    transform: translateY(0px) rotate(-45deg) !important;
+
+}
+
+/* Animated Hamburger menu ends here */
 /* ====== Header section ends here ====== */
 
 /* ====== Media queries for responsiveness starts here ====== */
@@ -273,6 +352,9 @@ a {
 }
 
 @media screen and (max-width: 820px) {
+    .hamburger {
+        display: flex;
+    }
   .header-nav {
     padding: 0.62rem 0;
   }
