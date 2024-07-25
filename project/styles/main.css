@@ -437,9 +437,7 @@ a {
 /* ====== About us section ends here ====== */
 
 /* ====== Product cards section starts here ====== */
-.products-container {
-  padding: 1rem 1.875rem;
-}
+
 .products-card-container {
   gap: 15px;
 }
@@ -803,12 +801,15 @@ footer {
 }
 
 aside {
+  z-index: 40;
+  background: var(--white-color);
+  padding: 1rem 1.875rem;
   width: 20%;
   height: 100%;
   position: sticky;
   left: 0;
   bottom: 0;
-  top: 100px;
+  top: 70px;
 }
 aside >h2{
   margin-bottom: 20px;
@@ -816,10 +817,12 @@ aside >h2{
 }
 
 #product-list {
+  padding: 1rem 1.875rem;
+
   display: flex;
   flex-wrap: wrap;
   width: 80%;
-  gap: 20px;
+  gap: 10px;
 }
 #category-filter{
   list-style: none;
@@ -851,7 +854,7 @@ aside >h2{
   width: 100%;
 }
     .products-card{
-    width: 135px;
+    width: 136px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 265px;
     position: relative;
@@ -969,7 +972,7 @@ position: relative;
 .products-addtocart-action{
   border-radius: 10px;
   position: absolute;
-  bottom:10px;
+  bottom:20px;
   left:10px;
   right: 10px;
   border: none;
@@ -1057,12 +1060,16 @@ footer {
 /* ====== Media queries for responsiveness starts here ====== */
 @media screen and (min-width: 575px) {
   aside {
+  top: 90px;
   height: 100%;}
     .products-card{
     width: 200px;
     height: 280px;
   
     }
+#product-list {
+  gap: 20px 10px;
+}
     
   .products-addtocart-action{
     bottom: 30px;
@@ -1088,7 +1095,7 @@ footer {
   }
   #product-list {
     width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   aside{
     width: 100%;
