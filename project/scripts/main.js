@@ -235,7 +235,7 @@ function renderCartItems() {
         </figure>
       <div>
         <h4>${product.title}</h4>
-        <p>${product.price}</p>
+        <p>₦ ${product.price}</p>
         <p>Quantity: ${product.quantity}</p>
         <button onclick="updateQuantity('${product.id}', 'decrease')">-</button>
         <button onclick="updateQuantity('${product.id}', 'increase')">+</button>
@@ -271,9 +271,14 @@ function viewProduct(id) {
   const productList = document.getElementById('product-list');
   productList.innerHTML = `
     <div class="full-product-details">
-      <img src="${product.mainImage}" alt="${product.title}">
+      <figure>
+          <img
+            src=${product.mainImage}
+            alt="${product.title}"
+          />
+        </figure>
       <h2>${product.title}</h2>
-      <p>${product.price}</p>
+      <p>₦${product.price}</p>
       <p>${product.desc}</p>
       <button class="btn btn-main" onclick="addToCart('${product.id}')">Add to Cart</button>
       <button class="btn btn-main" onclick="displayProducts(products)">Back to Products</button>

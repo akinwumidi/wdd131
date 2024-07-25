@@ -864,6 +864,22 @@ aside >h2{
 #category-filter li:hover:after {
   width: 100%;
 }
+
+.full-product-details p>button{
+  margin-top: 15px;
+}
+.full-product-details p,.full-product-details h2{
+  margin: 10px 0;
+}
+.full-product-details figure{
+  width: 100%;
+  height: 350px;
+  text-align: center;
+}
+.full-product-details figure img{
+  height: 100%;
+  width: auto;
+}
     .products-card{
     width: 136px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -1090,6 +1106,9 @@ footer {
   }
 }
 @media screen and (max-width: 575px) {
+  .full-product-details{
+  padding: 30px ; 
+}
   .header-nav {
     padding: 0.62rem 0.18rem;
   }
