@@ -819,6 +819,95 @@ footer {
 
 /* ====== Footer section ends here ====== */
 
+/* ====== Shop Page products-container section starts here ====== */
+.products-container{
+  display: flex;
+  justify-content: space-between;
+  gap:1.5rem;
+}
+.cart button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        aside {
+            width: 20%;
+        }
+
+        #product-list {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            gap: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 30%;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            max-width: 100%;
+        }
+
+        .cart-modal {
+            z-index: 20;
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100%;
+            background-color: white;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+            overflow-y: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .cart-modal.open {
+            display: block;
+            transform: translateX(0);
+        }
+
+        .cart-modal .cart-content {
+            padding: 20px;
+        }
+
+        .cart-modal .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .cart-item img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        .cart-item div {
+            flex-grow: 1;
+        }
+
+        .cart-item button {
+            margin: 0 5px;
+        }
+/* ====== Shop Page products-container section ends here ====== */
+
 /* ====== Fix for extra large devices starts here ====== */
 .header-nav,header,main,footer{
   max-width: 1200px;
