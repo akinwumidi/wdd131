@@ -505,6 +505,11 @@ a {
 }
 .promo-details{
   display: flex;
+  gap: 1.5rem;
+  justify-content: space-evenly;
+}
+.promo-details > div{
+  width: 25%;
 }
 .promocards-main {
     min-height: 29.06rem;
@@ -514,8 +519,7 @@ a {
     border-radius: 0.56rem;
     color: var(--white-color);
     background-position: bottom left;
-
-
+    padding: 1.5rem;
 }
 
 .promocards-main h3 {
