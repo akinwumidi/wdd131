@@ -153,12 +153,12 @@ function displayProducts(products) {
           <i class="fa-regular fa-heart"></i>
         </span>
       </div>
-      <div class="products-card-image-container ">
+            
+      <div class="products-card-image-container " onclick="viewProduct('${product.id}')">
         <figure>
           <img
             src=${product.miniImage}
             alt="${product.title}"
-            onclick="viewProduct('${product.id}')"
           />
         </figure>
       </div>

@@ -872,11 +872,12 @@ aside >h2{
     
     width: 25px;
     height: 25px;
-    background: var(--white-color);
+    background: var(--main-color);
     border-radius: 50%;
 }
 .products-wishlist-action i{
     stroke: var(--main-color);
+    color: var(--main-color);
 }
 .products-wishlist-action:hover{
     background: var(--main-color);
@@ -908,6 +909,7 @@ aside >h2{
     border-radius: 10px;
 }
 .products-card-image-container{
+  cursor: pointer;
   position: relative;
   width: 100%;
   height: 70px;
@@ -1082,14 +1084,18 @@ footer {
   }
   #category-filter{
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   #product-list {
     width: 100%;
     justify-content: center;
   }
-  #aside{
+  aside{
     width: 100%;
+    background: var(--white-color);
+  }
+  aside>h2{
+    font-weight: 700;
   }
 }
 
