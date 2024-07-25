@@ -804,6 +804,14 @@ footer {
 
 aside {
   width: 20%;
+  height: 100%;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  top: 100px;
+}
+aside >h2{
+  margin-bottom: 20px;
 }
 
 #product-list {
@@ -916,6 +924,8 @@ aside {
   height: 100%;
   width: 100%;
   object-fit: contain;
+  mix-blend-mode: multiply;
+
 
 }
 .products-card-image-details{
@@ -1021,7 +1031,6 @@ position: relative;
   height: 50px;
   object-fit: contain;
   margin-right: 10px;
-  mix-blend-mode: multiply;
 }
 
 .cart-item div {
@@ -1038,7 +1047,7 @@ position: relative;
 header,
 main,
 footer {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 /* ====== Fix for extra large devices ends here ====== */

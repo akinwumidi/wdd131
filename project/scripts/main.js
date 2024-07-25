@@ -40,9 +40,9 @@ const products = [
     discountExpiresInDays: 23,
     rating: 5,
     title: "Banana la fruit",
-    price: "₦4,000.00",
-    miniImage: "./images/banana.jpg",
-    mainImage: "./images/banana.jpg",
+    price: "4,000.00",
+    miniImage: "./images/banana.png",
+    mainImage: "./images/banana.png",
     category: "fruits",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
   },
@@ -52,10 +52,10 @@ const products = [
     discount: 50,
     discountExpiresInDays: 23,
     rating: 5,
-    title: "goldern moun la porche",
-    price: "₦2,000.00",
-    miniImage: "./images/goldern-moun-la-porche.jpg",
-    mainImage: "./images/goldern-moun-la-porche.jpg",
+    title: "Magic pizito la porche",
+    price: "2,000.00",
+    miniImage: "./images/magic-pizito.png",
+    mainImage: "./images/magic-pizito.png",
     category: "wholegrain",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
   }
@@ -65,10 +65,10 @@ const products = [
     discount: 50,
     discountExpiresInDays: 23,
     rating: 5,
-    title: "pounded yam & vegetable",
-    price: "₦4,000.00",
-    miniImage: "./images/pounded-yam.jpg",
-    mainImage: "./images/pounded-yam.jpg",
+    title: "Konoha soup",
+    price: "4,000.00",
+    miniImage: "./images/konoha-soup.png",
+    mainImage: "./images/konoha-soup.png",
     category: "solids",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
   }
@@ -79,9 +79,9 @@ const products = [
     discountExpiresInDays: 23,
     rating: 5,
     title: "Jellof rice and beef",
-    price: "₦4,000.00",
-    miniImage: "./images/jellof-rice.jpg",
-    mainImage: "./images/jellof-rice.jpg",
+    price: "4,000.00",
+    miniImage: "./images/jellof.png",
+    mainImage: "./images/jellof.png",
     category: "solids",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
   }
@@ -91,10 +91,10 @@ const products = [
     discount: 50,
     discountExpiresInDays: 23,
     rating: 5,
-    title: "Oatmeal la cole",
-    price: "₦4,000.00",
-    miniImage: "./images/oatmeal.jpg",
-    mainImage: "./images/oatmeal.jpg",
+    title: "Rsengan piza la",
+    price: "4,000.00",
+    miniImage: "./images/rasengan-piza.png",
+    mainImage: "./images/rasengan-piza.png",
     category: "vegetarian",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
   }
@@ -105,10 +105,23 @@ const products = [
     discountExpiresInDays: 23,
     rating: 5,
     title: "La Burger cuisine",
-    price: "₦4,000.00",
+    price: "4,000.00",
     miniImage: "./images/burger.png",
     mainImage: "./images/burger.png",
     category: "solids",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+  }
+  ,{
+    id: "7",
+    age: "new",
+    discount: 50,
+    discountExpiresInDays: 23,
+    rating: 5,
+    title: "overcooked ramen",
+    price: "4,000.00",
+    miniImage: "./images/spa-ramen.png",
+    mainImage: "./images/spa-ramen.png",
+    category: "vegetarian",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
   }
 ];
