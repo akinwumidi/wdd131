@@ -447,9 +447,16 @@ a {
 /* ====== About us section ends here ====== */
 
 /* ====== Product cards section starts here ====== */
+.products-container{
+  padding: 1rem 1.875rem;
+}
+.products-card-container{
+  gap:15px;
+}
 .productcard {
     border: 0.06rem solid var(--main-color2);
     height: 100%;
+    padding: 10px;
     transform: translateY(0px);
     background: transparent;
     scale: 1;
