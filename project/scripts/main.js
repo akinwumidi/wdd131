@@ -5,14 +5,14 @@ let backdropdiv = document.querySelector(".backdrop")
 let navCon = document.querySelector(".mobile-nav-container ")
 
 
-function toggleClassName() {
+function toggleclass() {
     hamburgerdiv.classList.toggle('crossburger')
     navCon.classList.toggle('show-mobile-navcontainer')
     backdropdiv.classList.toggle('showbackdrop')
 }
 
-hamburgerdiv.addEventListener("click", toggleClassName)
-backdropdiv.addEventListener("click", toggleClassName)
+hamburgerdiv.addEventListener("click", toggleclass)
+backdropdiv.addEventListener("click", toggleclass)
 // Animated hamburger menu ends here
 
 // Window onscroll implementation starts here
@@ -98,6 +98,19 @@ const products = [
     category: "vegetarian",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
   }
+  ,{
+    id: "6",
+    age: "new",
+    discount: 50,
+    discountExpiresInDays: 23,
+    rating: 5,
+    title: "La Burger cuisine",
+    price: "₦4,000.00",
+    miniImage: "./images/burger.png",
+    mainImage: "./images/burger.png",
+    category: "solids",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+  }
 ];
 
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -115,11 +128,49 @@ function displayProducts(products) {
     const productCard = document.createElement('div');
     productCard.classList.add('product-card');
     productCard.innerHTML = `
-      <img src="${product.miniImage}" alt="${product.title}">
-      <h3>${product.title}</h3>
-      <p>${product.price}</p>
-      <button onclick="addToCart('${product.id}')">Add to Cart</button>
-      <button onclick="viewProduct('${product.id}')">View</button>
+    <div class="products-card">
+      <div class="product-card-header">
+        <div class="discounts">
+          <span class="products-age-type">${product.age}</span>
+          <span class="products-discount-amount">
+            -${product.discount}%
+          </span>
+        </div>
+        <span>
+          <LuHeart />
+        </span>
+      </div>
+      <div class="products-card-image-container ">
+        <figure>
+          <img
+            src=${product.miniImage}
+            alt="${product.title}"
+            onclick="viewProduct('${product.id}')"
+          />
+        </figure>
+      </div>
+      <div class="products-card-image-details ">
+        <div class="product-title-container">
+          <span class="products-title">
+            ${product.title.length > 30 ? product.title.substring(0, 35) + "..." : product.title}
+          </span>
+        </div>
+        <span class="products-price">₦ ${product.price}</span>
+        <span class="products-rating">
+          <LuStar />
+          <LuStar />
+          <LuStar />
+          <LuStar />
+          <LuStarHalf />
+        </span>
+          <button
+          onclick="addToCart('${product.id}')"
+            class="products-addtocart-action"
+          >
+            Add To Cart
+          </button> 
+      </div>
+    </div>
     `;
     productList.appendChild(productCard);
   });
@@ -158,7 +209,7 @@ function toggleCart() {
 
 function renderCartItems() {
   const cartItems = document.getElementById('cart-items');
-  cartItems.innerHTML = 'No items in cart';
+  cartItems.innerHTML = '';
   cart.forEach(product => {
     const cartItem = document.createElement('li');
     cartItem.classList.add('cart-item');
@@ -172,6 +223,7 @@ function renderCartItems() {
         <button onclick="updateQuantity('${product.id}', 'increase')">+</button>
         <button onclick="removeFromCart('${product.id}')">Remove</button>
       </div>
+
     `;
     cartItems.appendChild(cartItem);
   });
