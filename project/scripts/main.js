@@ -150,7 +150,7 @@ function displayProducts(products) {
           </span>
         </div>
         <span>
-          <LuHeart />
+          <i class="fa-regular fa-heart"></i>
         </span>
       </div>
       <div class="products-card-image-container ">
@@ -165,15 +165,15 @@ function displayProducts(products) {
       <div class="products-card-image-details ">
         <div class="product-title-container">
           <span class="products-title">
-            ${product.title.length > 30 ? product.title.substring(0, 35) + "..." : product.title}
+            ${product.title.length > 15 ? product.title.substring(0, 15) + "..." : product.title}
           </span>
         </div>
         <span class="products-price">₦ ${product.price}</span>
         <span class="products-rating">
-          <LuStar />
-          <LuStar />
-          <LuStar />
-          <LuStar />
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
           <LuStarHalf />
         </span>
           <button

@@ -812,6 +812,7 @@ aside {
 }
 aside >h2{
   margin-bottom: 20px;
+  width: 100%;
 }
 
 #product-list {
@@ -850,14 +851,12 @@ aside >h2{
   width: 100%;
 }
     .products-card{
+    width: 150px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 260px;
-    width: 160px;
-    max-height: 260px;
+    height: 265px;
     position: relative;
     padding: 1rem;
     border-radius: 10px;
-     /* md:w-[200px]  */
 
 }  
 .product-card-header{
@@ -925,6 +924,7 @@ aside >h2{
   width: 100%;
   object-fit: contain;
   mix-blend-mode: multiply;
+  cursor: pointer;
 
 
 }
@@ -936,9 +936,9 @@ align-items: flex-start;
 .product-title-container {
 position: relative;
   display: flex;
-  /* width: 100%; */
-  width: 150px;
-  padding: 5px 10px 0 5px;
+  width: 100%;
+  /* width: 150px; */
+  padding: 5px 10px 0 0;
    /* md:w-[190px]  */
 }
 
@@ -1053,14 +1053,43 @@ footer {
 /* ====== Fix for extra large devices ends here ====== */
 
 /* ====== Media queries for responsiveness starts here ====== */
+@media screen and (min-width: 575px) {
+  aside {
+  height: 100%;}
+    .products-card{
+    width: 200px;
+    height: 280px;
+  
+    }
+    
+  .products-addtocart-action{
+    bottom: 30px;
+  }
+}
 @media screen and (max-width: 575px) {
   .header-nav {
     padding: 0.62rem 0.18rem;
   }
-
+  
   .footer-container {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media screen and (max-width: 612px) {
+  .products-container{
+    flex-direction: column;
+  }
+  #category-filter{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #product-list {
+    width: 100%;
+    justify-content: center;
+  }
+  #aside{
+    width: 100%;
   }
 }
 
