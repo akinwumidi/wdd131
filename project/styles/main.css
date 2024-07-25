@@ -575,10 +575,9 @@ a {
     position: relative;
     min-height: 21.87rem;
     padding: 2.5rem 1.875rem;
-}
-
-.testimonial::before {
-
+  }
+  
+  .testimonial::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -596,7 +595,8 @@ a {
 .testimonial-container{
   display: flex;
   gap: 15px;
-  overflow-x: scroll;
+  overflow-x: auto;
+  touch-action: pan-x;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
@@ -605,16 +605,17 @@ a {
 }
 
 .testimonial .section-tittles {
-    color: var(--white-color);
+  color: var(--white-color);
 }
 
 .testimonial-card {
+  cursor: pointer;
   z-index: 10;
-    border-radius: 0.5rem;
-    width: 600px;
-    min-width: 19.37rem;
-    min-height: 180px;
-    padding: 0.93rem;
+  border-radius: 0.5rem;
+  width: 600px;
+  min-width: 19.37rem;
+  min-height: 180px;
+  padding: 0.93rem;
     border: 1.5px solid var(--light-gray);
     color: var(--white-color);
 
