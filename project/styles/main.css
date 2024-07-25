@@ -123,6 +123,7 @@ a {
 }
 
 .section-tittles::after {
+  display: none;
   content: "";
   background: var(--support-color);
   width: 6.25rem;
@@ -224,10 +225,14 @@ a {
   background: var(--main-color2);
 }
 
-.mobile-nav-container a {
+.mobile-nav-container a{
   display: block;
   padding: 0.93rem 1.25rem;
   color: var(--white-color);
+}
+.mobile-nav-container button {
+  margin: 0 1.25rem;
+
 }
 
 .mobile-nav-container a:focus {
@@ -269,7 +274,7 @@ a {
   padding: 6.12rem 1.875rem 2rem 1.875rem;
 }
 .header-info h1 {
-  font-size: 3.43rem;
+  font-size: 3.23rem;
   color: var(--white-color);
   font-weight: 600;
   line-height: 1.1;
@@ -807,7 +812,7 @@ footer {
 }
 
 aside {
-  z-index: 10;
+  z-index: 2;
   background: var(--white-color);
   padding: 1rem 1.875rem;
   width: 20%;
@@ -1065,6 +1070,9 @@ footer {
 
 /* ====== Media queries for responsiveness starts here ====== */
 @media screen and (min-width: 575px) {
+  .section-tittles::after {
+  display: flex;
+  } 
   aside {
   top: 90px;
   height: 100%;}

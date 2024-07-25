@@ -227,7 +227,12 @@ function renderCartItems() {
     const cartItem = document.createElement('li');
     cartItem.classList.add('cart-item');
     cartItem.innerHTML = `
-      <img src="${product.miniImage}" alt="${product.title}">
+      <figure>
+          <img
+            src=${product.mainImage}
+            alt="${product.title}"
+          />
+        </figure>
       <div>
         <h4>${product.title}</h4>
         <p>${product.price}</p>
@@ -265,13 +270,13 @@ function viewProduct(id) {
   const product = products.find(product => product.id === id);
   const productList = document.getElementById('product-list');
   productList.innerHTML = `
-    <div>
+    <div class="full-product-details">
       <img src="${product.mainImage}" alt="${product.title}">
       <h2>${product.title}</h2>
       <p>${product.price}</p>
       <p>${product.desc}</p>
-      <button onclick="addToCart('${product.id}')">Add to Cart</button>
-      <button onclick="displayProducts(products)">Back to Products</button>
+      <button class="btn btn-main" onclick="addToCart('${product.id}')">Add to Cart</button>
+      <button class="btn btn-main" onclick="displayProducts(products)">Back to Products</button>
     </div>
   `;
 }
