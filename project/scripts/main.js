@@ -270,6 +270,7 @@ function viewProduct(id) {
   const product = products.find(product => product.id === id);
   const productList = document.getElementById('product-list');
   productList.innerHTML = `
+  <h2>${product.title}</h2>
     <div class="full-product-details">
       <figure>
           <img
@@ -277,7 +278,6 @@ function viewProduct(id) {
             alt="${product.title}"
           />
         </figure>
-      <h2>${product.title}</h2>
       <p>₦${product.price}</p>
       <p>${product.desc}</p>
       <button class="btn btn-main" onclick="addToCart('${product.id}')">Add to Cart</button>
