@@ -865,5 +865,8 @@ footer {
   .header-showcase{
     flex-direction: column;
   }
+  .products-card-container{
+    flex-direction: column;
+  }
 }
 /* ====== Media queries for responsiveness ends here ====== */
