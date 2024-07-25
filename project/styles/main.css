@@ -50,6 +50,7 @@ a {
 }
 .btn {
   padding: 0.5rem 0.93rem;
+  cursor: pointer;
 }
 
 .btn i {
@@ -569,6 +570,11 @@ a {
 }
 
 /* ====== Promo cards section ends here ====== */
+/* ====== Common section starts here ====== */
+.common-section{
+  padding: 100px 30px 30px 30px;
+}
+/* ====== Common section ends here ====== */
 
 /* ====== Testimonial section starts here ====== */
 .testimonial {
