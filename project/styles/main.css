@@ -373,22 +373,26 @@ a {
     margin-top: -6.25rem;
     justify-content: center;
     gap: 20px;
-}
-
-.header-showcase div {
+    padding: 0.5rem;
+    display: flex;
+  }
+  
+  .header-showcase div {
     position: relative;
 
 }
 
 .header-cards {
     background: var(--white-color);
-    display: flex;
+    display: flex; 
     min-height: 3.12rem;
     padding: 0.62rem;
     box-shadow: var(--box-shadow);
     border-radius: 0.75rem;
     border: 1px solid transparent;
     transition: all 0.3s ease;
+        min-width: 28.3%;
+
 }
 
 .header-cards:hover {
@@ -397,7 +401,6 @@ a {
 }
 
 .cards-brand {
-    flex: 0 0 auto;
     height: 3.12rem;
     width: 3.12rem;
     border-radius: 50%;
@@ -438,6 +441,9 @@ a {
 /* ====== Header showcase section ends here ====== */
 
 /* ====== About us section starts here ====== */
+.aboutus{
+  padding: 3rem 1.875rem;
+}
 /* ====== About us section ends here ====== */
 
 /* ====== Product cards section starts here ====== */
