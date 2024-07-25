@@ -595,9 +595,13 @@ a {
 
 .testimonial-container{
   display: flex;
-  overflow-x: scroll;
   gap: 15px;
-  flex-shrink: 0;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.testimonial-container::-webkit-scrollbar {
+  display: none;
 }
 
 .testimonial .section-tittles {
