@@ -45,6 +45,9 @@ a {
 /*  ====== Page resets ends here ====== */
 
 /* ====== Utility classes section starts here ======*/
+.flex-container{
+  display: flex;
+}
 .btn {
   padding: 0.5rem 0.93rem;
 }
@@ -368,6 +371,8 @@ a {
 /* ====== Header showcase section starts here ====== */
 .header-showcase {
     margin-top: -6.25rem;
+    justify-content: center;
+    gap: 20px;
 }
 
 .header-showcase div {
@@ -823,6 +828,7 @@ footer {
 
 /* ====== Media queries for responsiveness starts here ====== */
 @media screen and (max-width: 575px) {
+
   .header-nav {
     padding: 0.62rem 0.18rem;
   }
@@ -842,6 +848,9 @@ footer {
 
   .header-info p {
     min-width: 100%;
+  }
+  .header-showcase{
+    flex-direction: column;
   }
 }
 /* ====== Media queries for responsiveness ends here ====== */
