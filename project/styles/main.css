@@ -4,6 +4,7 @@
   --white-color: #fff;
   --main-color: rgb(10, 173, 10);
   --main-color2: #0aad0a;
+  --main-color3: rgb(10, 163, 10);
   --support-color: #fb175f;
   --gray-color: rgb(114, 118, 126);
   --gray-color2: #f4f4f4;
@@ -153,7 +154,7 @@ a {
 }
 
 .header-nav-sticky {
-  background: var(--green-gradient);
+  background: var(--main-color);
 }
 
 .header-nav .brand {
@@ -210,6 +211,7 @@ a {
 }
 
 .mobile-nav-container {
+  z-index: 70;
   list-style: none;
   position: absolute;
   width: 100%;
@@ -233,6 +235,7 @@ a {
 }
 
 .show-mobile-navcontainer {
+  z-index: 70;
   transform: translateY(0);
   visibility: visible;
 }
@@ -437,7 +440,10 @@ a {
 /* ====== About us section ends here ====== */
 
 /* ====== Product cards section starts here ====== */
+.whyus-container{
+  padding: 0 30px;
 
+}
 .products-card-container {
   gap: 15px;
 }
@@ -801,7 +807,7 @@ footer {
 }
 
 aside {
-  z-index: 40;
+  z-index: 10;
   background: var(--white-color);
   padding: 1rem 1.875rem;
   width: 20%;
